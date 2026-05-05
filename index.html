@@ -3,61 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-  .llb {
-    max-width: 200px;
-    max-height: 200px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-  }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
     <title>MyTechGear</title>
 </head>
 <body>
     <header>
     <h1>MY TECH GEAR</h1>
-    <p>I have a lot of tech gear which i want to keep track of, that's what this website does it contain all the tech stuff I have and organizes it nicely and keep detailed info of every item.</p>
+    <p class="p1">I have a lot of tech gear which i want to keep track of, that's what this website does it contain all the tech stuff I have and organizes it nicely and keep detailed info of every item.</p>
     <nav>
         <ul>
             <li><a href="#laptop">Laptops</a></li>
             <li><a href="#phones">Phones</a></li>
             <li><a href="#connectingstuff">Connecting Stuff</a> </li>
             <li><a href="#otheraccessories">Other Accessories</a></li>
+            <li><a href="#mysetup">My Setup</a></li>
         </ul>
     </nav>
     </header>
     <main>
-    <div id="laptop">
-        <h3>LAPTOPS</h1>
-        <img src="lenovo_laptop_back.jpg" alt="IMAGE NOT FOUND">
-        <img src="backlenovo.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px" id="im1">
+
+    <!-- Div1 -->
+    <div class="stuff" id="laptops">
+        <h3>LAPTOPS</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assests/lenovo_laptop_back.jpg" alt="Lenovo Legion Laptop" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Lenovo Legion (LOQ 15IAX9)</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_164112.jpg" alt="Dell Inspiron Laptop" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Dell Inspiron (Inspiron 15 3000)</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="phones">
+
+    <!-- Div2 -->
+    <div class="stuff"id="phones">
         <h3>PHONES</h3>
-        <img src="" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="" alt="IMAGE NOT FOUND" width="300px" height="300px">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_165058.jpg" alt="MOTOROLA Moto G5 Plus Front" style="width: 100%;"> 
+                <div class="desc">
+                    <p>MOTOROLA Moto G5 Plus Front</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_165039.jpg" alt="MOTOROLA Moto G5 Plus Back" style="width: 100%;"> 
+                <div class="desc">
+                    <p>MOTOROLA Moto G5 Plus Back</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_165111.jpg" alt="Redmi 10 Prime Front" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Redmi 10 Prime Front</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_165118.jpg" alt="Redmi 10 Prime Back" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Redmi 10 Prime Back</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div id="connectingstuff">
+
+    <!-- Div3 -->
+    <div class="stuff"id="connectingstuff">
         <h3>CONNECTING STUFF</h3>
-        <img src="keyboard_back.jpg" alt="IMAGE NOT FOUND" class="llb" >
-        <img src="keyboard_front.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="CONTROLLER.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_164350.jpg" alt="Wires, 4GB RAM, HHD, Ethernet cable, usb (c-c)" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Wires, 4GB RAM, HHD</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_164513.jpg" alt="Watches, cells" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Watches, cells</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_165001.jpg" alt="Logitech Mouse + Mousepad" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Logitech Mouse + Mousepad</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div id="otheraccessories">
-        <h3>OTHER ACCESSORIES</h3>
-        <img src="cooling_fan.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="fans_back.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="laptop_stand.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="standback.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
+
+    <!-- Div4 -->
+    <div class="stuff"id="otheraccessories">
+        <h3>OTHER ACCESSORIES</h3>  
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assests/CONTROLLER.jpg" alt="Ant Esports Controller" style="width: 100%;">
+                <div class="desc">
+                    <p>Ant Esports Controller</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/cooling_fan.jpg" alt="Cooling Fan Front" style="width: 100%;">
+                <div class="desc">
+                    <p>Cooling Fan</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/fans_back.jpg" alt="Cooling Fan Back" style="width: 100%;">
+                <div class="desc">
+                    <p>Cooling Fan back</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/IMG_20260505_164714.jpg" alt="Scientific Calculator" style="width: 100%;">
+                <div class="desc">
+                    <p>Scientific Calculator</p>
+                </div>
+            </div>
+        </div> 
     </div>
-    <div>
-        <h1>MY SETUP</h1>
-        <img src="SETUP.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
-        <img src="setup_again.jpg" alt="IMAGE NOT FOUND" width="300px" height="300px">
+
+    <!-- Div5 -->
+    <div class="stuff"id="mysetup">
+        <h3>MY SETUP</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assests/SETUP.jpg" alt="Setup" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Setup1</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assests/setup_again.jpg" alt="Setup1" style="width: 100%;"> 
+                <div class="desc">
+                    <p>Setup1</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
+
     </main>
+    <footer>
+        <p class="p1">Contact me at rithikch.dev@gmail.com</p>
+    </footer>
 </body>
 </html>

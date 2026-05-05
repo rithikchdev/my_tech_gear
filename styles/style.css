@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+div.gallery-item{
+    margin: 5px;
+    border: 1px solid beige;
+    width: calc(25% - 20px);
+}
+div.gallery-item img{
+    width: 100%;
+    height: auto;
+}
+div.gallery-item:hover{
+    border: 1px solid black;
+}
+div.gallery-item .desc{
+    padding: 15px;
+    text-align: center;
+}
+/* 2 Rules */
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+/* 2 Rules */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-size:1vw;
+    color: white;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size:1.5vw;
+}
+p.p1{
+    text-align: center;
+    color:white;
+    font-size: 1.2vw;
+}
+nav{
+    background-color: lightgray;
+    border-style: solid;;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+ul li{
+    float: left;
+}
+ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: darkgray;
+}
+header{
+    padding: 20px;
+    text-align: center;
+}
+.stuff{
+    border-style: solid;
+    background-color: lightgray;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
